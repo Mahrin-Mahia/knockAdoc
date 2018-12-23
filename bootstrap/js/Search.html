@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)http://localhost:8080/searchdoctor.php?doc_id=4&appointment=1 -->
+<html class="gr__localhost"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Search</title>
+<link rel="stylesheet" href="./Search_files/style.css">
+<link rel="stylesheet" href="./Search_files/bootstrap.min.css">
+<script src="./Search_files/jquery-3.2.1.slim.min.js"></script>
+<script src="./Search_files/popper.min.js"></script>
+<script src="./Search_files/bootstrap.min.js"></script>
+<script src="./Search_files/custom.js"></script>
+
+
+</head>
+<body data-gr-c-s-loaded="true">
+
+<div class="row">
+
+    <div class="col">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <!-- Brand -->
+            <a class="navbar-brand" href="http://localhost:8080/searchdoctor.php?doc_id=4&amp;appointment=1#">NEED DOCTOR</a>
+
+            <!-- Links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost:8080/patientprofile.php"> Profile </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost:8080/searchdoctor.php"> Search </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost:8080/patientfeedback.php"> Feedback </a>
+                </li>
+
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="http://localhost:8080/searchdoctor.php?doc_id=4&amp;appointment=1#" id="navbardrop" data-toggle="dropdown">
+                        Account
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="http://localhost:8080/logout.php">Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+</div>
+
+<div class="wrapper">
+    <div class="box1">
+    <div class="profile-pic">
+
+        
+                    <img src="./Search_files/Screen Shot 2017-12-24 at 3.35.34 pm.png">
+        
+    </div>
+
+    <br>
+    <hr>
+
+    <h3>Update Profile Picture</h3>
+
+    <form action="http://localhost:8080/patientprofile.php" method="post" enctype="multipart/form-data">
+        <input type="file" name="fileToUpload" id="fileToUpload">
+        <input type="submit" value="Upload Image" name="submit-image">
+    </form>
+
+    
+
+
+
+    
+ 			<p><b>Name </b>: wasit </p>
+ 			</div>    <div class="box2">
+        <h1>Doctor Search</h1>
+
+        
+        <hr>
+        <!--    Doctor Search -->
+        <form class="form-inline" method="POST" action="http://localhost:8080/searchdoctor.php?doc_id=4&amp;appointment=1">
+            <div class="form-group">
+                <select name="speciality" class="custom-select">
+                    <option>Choose Speciality</option>
+
+                    <option value="Medicine">Medicine</option> <option value="Cardiologist">Cardiologist</option> <option value="Dermatologist">Dermatologist</option> <option value="Pediatrician">Pediatrician</option> <option value="Oncologist">Oncologist</option> <option value="Gynecologist">Gynecologist</option> <option value="Pediatrician">Pediatrician</option> 
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="custom-control custom-radio">
+                    <input id="radio1" name="radio" value="male" type="radio" class="custom-control-input">
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description">Male</span>
+                </label>
+                <label class="custom-control custom-radio">
+                    <input id="radio2" name="radio" type="radio" value="female" class="custom-control-input">
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description">Female</span>
+                </label>
+            </div>
+
+            <button type="submit" name="doctor-search" class="btn btn-default">Search</button>
+        </form>
+        <br>
+        <p class="text-info"> Selection of Male/Female is optional.</p>
+
+
+        <div class="row">
+            <div class="col">
+                                <div class="booking">
+    
+        <div class="card">
+  <div class="card-header">
+    Make an appointment of <b> Dr. mahi </b>
+  </div>
+  <div class="card-body">
+    <h4 class="card-title">Cardiologist</h4>
+    <div class="time">
+        <table class="table">
+            <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Date</th>
+                <th scope="col">Time</th>
+                <th scope="col">Availability</th>
+                <th scope="col">Action</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            
+                <tr>
+                <th scope="row"> ('0+1') </th>
+                <td> 6p.m </td>
+                <td> 2017-12-07 </td>
+                <td> 0</td>
+                <td> something </td>
+            </tr>
+                
+                
+                <tr>
+                <th scope="row"> ('1+1') </th>
+                <td> 7p.m </td>
+                <td> 2017-12-07 </td>
+                <td> 0</td>
+                <td> something </td>
+            </tr>
+                
+                
+                <tr>
+                <th scope="row"> ('2+1') </th>
+                <td> 8p.m </td>
+                <td> 2017-12-07 </td>
+                <td> 0</td>
+                <td> something </td>
+            </tr>
+                
+                
+                <tr>
+                <th scope="row"> ('3+1') </th>
+                <td> 6p.m </td>
+                <td> 2017-12-08 </td>
+                <td> 0</td>
+                <td> something </td>
+            </tr>
+                
+                
+                <tr>
+                <th scope="row"> ('4+1') </th>
+                <td> 6:30p.m </td>
+                <td> 2017-12-08 </td>
+                <td> 0</td>
+                <td> something </td>
+            </tr>
+                
+                
+                <tr>
+                <th scope="row"> ('5+1') </th>
+                <td> 6p.m </td>
+                <td> 2017-12-15 </td>
+                <td> 0</td>
+                <td> something </td>
+            </tr>
+                
+                
+                <tr>
+                <th scope="row"> ('6+1') </th>
+                <td> 6:30p.m </td>
+                <td> 2017-12-15 </td>
+                <td> 0</td>
+                <td> something </td>
+            </tr>
+                
+                
+                <tr>
+                <th scope="row"> ('7+1') </th>
+                <td> 7p.m </td>
+                <td> 2017-12-15 </td>
+                <td> 0</td>
+                <td> something </td>
+            </tr>
+                
+                
+                <tr>
+                <th scope="row"> ('8+1') </th>
+                <td> 8p.m </td>
+                <td> 2017-12-15 </td>
+                <td> 0</td>
+                <td> something </td>
+            </tr>
+                
+                
+                <tr>
+                <th scope="row"> ('9+1') </th>
+                <td> 6p.m </td>
+                <td> 2017-12-31 </td>
+                <td> 0</td>
+                <td> something </td>
+            </tr>
+                
+                
+
+            </tbody>
+        </table>
+
+
+        </div>
+    <a href="http://localhost:8080/searchdoctor.php?doc_id=4&amp;appointment=1#" class="btn btn-primary">Confirm Appointment</a>
+  </div>
+</div>
+        
+        
+        </div>            </div>
+
+        </div>
+
+        <hr>
+        <br>
+
+    </div>
+
+
+
+    <div class="box3">
+    <h1>Notice</h1>
+    Name: Dr. Mahia
+This is a test notice
+<br> <br>example notice<br> <br></div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<iframe frameborder="0" scrolling="no" style="background-color: transparent; border: 0px; display: none;" src="./Search_files/saved_resource.html"></iframe><div id="GOOGLE_INPUT_CHEXT_FLAG" style="display: none;" input="" input_stat="{&quot;tlang&quot;:true,&quot;tsbc&quot;:true,&quot;pun&quot;:true,&quot;mk&quot;:true,&quot;ss&quot;:true}"></div><script id="wappalyzer" src="chrome-extension://gppongmhjkpfnbhagpmjfkannfbllamg/js/inject.js"></script></body></html>
